@@ -3,8 +3,8 @@
 #------------------------------------------------------------------
 PROJNAME := kubelet
 
-KUBELET_VERSION := v1.18.3
-KUBELET_SHA := 1027a6fccadd320f123894dc624db31539333deef0b3d51b4bd3efc9214f2d74a0a50c53dc28e5801426d3c9556f82f4e06042c824151fea9112df795976d158
+KUBELET_VERSION := v1.18.4
+KUBELET_SHA := b01c34c0303116a2c7a579fec5bcd19d76fa605c6ec9fa7c9885e669437911365cf63c8be381aebab666f833ff9099be024fb139d3ddc50e5f9b6702352b5a3c
 
 GCR_REPO := eu.gcr.io/swade1987
 GCLOUD_SERVICE_KEY ?="unknown"
