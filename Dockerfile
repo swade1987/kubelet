@@ -1,12 +1,12 @@
 FROM docker.io/alpine:3.12 AS fetcher
 LABEL maintainer="Steve Wade <steven@stevenwade.co.uk>"
 
-ARG KUBELET="Unknown"
+ARG KUBELET_VERSION="Unknown"
 ARG KUBELET_SHA="Unknown"
 ARG ARCH=amd64
 
 RUN apk add curl && \
-  curl -L https://dl.k8s.io/${KUBELET}/kubernetes-node-linux-${ARCH}.tar.gz -o node.tar.gz && \
+  curl -L https://dl.k8s.io/${KUBELET_VERSION}/kubernetes-node-linux-${ARCH}.tar.gz -o node.tar.gz && \
   echo "${KUBELET_SHA}  node.tar.gz" | sha512sum -c && \
   tar xzf node.tar.gz kubernetes/node/bin/kubectl kubernetes/node/bin/kubelet
 
