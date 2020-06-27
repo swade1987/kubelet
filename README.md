@@ -29,3 +29,9 @@ Kubelet also requires:
 ### kubectl
 
 `kubectl` (no dependencies) is also included for convenience (e.g. use pre-pulled Kubelet image to `kubectl delete node` on preemption)
+
+## Credits
+
+This repository is heavily based on [https://github.com/poseidon/kubelet](https://github.com/poseidon/kubelet).
+
+Shout out to [Dalton Hubble](https://github.com/dghubble) for his continual contributions.
